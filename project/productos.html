@@ -25,7 +25,7 @@
                 onclick="location.href='http://cambalache.net:8080/cambalaches.html'">Cambalaches</button><span
                 class="simplebutton">|</span>
             <button class="simplebutton"
-                onclick="location.href='http://cambalache.net:8080/login.html'">Ingresar</button>
+                onclick="location.href='http://cambalache.net:8080/dashboard.html'">Dashboard</button>
             <button id="mainbutton" onclick="location.href='http://cambalache.net:8080/dashboard.html'"><img
                     src="/images/cart.jpg" alt="carrito" id="carrito">Mi
                 Carrito</button>
@@ -37,32 +37,36 @@
     </div>
     <div class="container-title-section">
         <h1>
-            Ingreso de Usuarios
+            Nuevo Producto
         </h1>
         <hr />
 
 
 
     </div>
-    <div class="mid-container-body">
+    <div class="mid-container-product">
+        <h5 id="grey-text" class="text-margin-left">Ingrese aquí la información del Producto que desea incluir
+            en Cambalache.net</h5>
+        <div class="mid-container-register-inside">
 
 
-        <div class="mid-container-login">
-            <input type="email" placeholder="Correo Electrónico">
-            <input type="password" placeholder="Contraseña">
+            <input type="text" placeholder=" Nombre del Producto" id="smallinput" maxlength="200">
+            <textarea type="text" placeholder=" Descripción" id="fatinput" maxlength="300"></textarea>
+            <input type="text" placeholder=" http://google.com/imagen.png" id="largeinput">
+            <textarea type="text" placeholder=" Busco" id="fatinput" maxlength="300"></textarea>
+            <hr />
+
         </div>
-        <hr />
-        <h5>Si no tienes una cuenta de usuario<a href="http://cambalache.net:8080/registro.html"> regístrese aquí.</a>
-        </h5>
+
         <div class="container-buttons">
 
 
-            <button id="greybutton"
-                onclick="location.href='http://cambalache.net:8080/dashboard.html'">Ingresar</button>
+            <button id="greybutton" onclick="location.href='http://cambalache.net:8080/dashboard.html'">Guardar</button>
             <button id="lightergreybutton"
-                onclick="location.href='http://cambalache.net:8080/index.html'">Cancelar</button>
+                onclick="location.href='http://cambalache.net:8080/dashboard.html'">Cancelar</button>
         </div>
     </div>
+
 
 
     <div class="top-container-cambalache-smaller">
@@ -79,7 +83,7 @@
                 onclick="location.href='http://cambalache.net:8080/login.html'">Ingresar</button>
 
         </div>
-        <div class="white-container container-aligned-inline ">
+        <div class="container-aligned-inline white-container">
             <img src="/images/c.png" alt="img">
             <footer>Cambalache.net</footer>
         </div>
