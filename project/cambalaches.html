@@ -6,163 +6,252 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cambalache.net</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
+    <div class="main-conainer">
+        <div class="container grey-container">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img id="logoimage" src="images/default.png" alt="mountain"></a>
 
-    <div class="container-aligned-inline grey-container container-margin-bottom">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-lg-end align-items-center"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link simplebutton" href="http://cambalache.net:8080/index.html">Inicio</a>
 
-        <img id="logoimagesmaller" src="/images/default.png" alt="mountain">
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link simplebutton d-none d-lg-block">|</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link simplebutton"
+                                    href="http://cambalache.net:8080/cambalaches.html">Cambalaches</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link simplebutton d-none d-lg-block">|</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link simplebutton"
+                                    href="http://cambalache.net:8080/login.html">Ingresar</a>
+                            </li>
+                            <li class="nav-item">
+                                <button id="mainbutton" class="nav-link btn"
+                                    onclick="location.href='http://cambalache.net:8080/dashboard.html'"><img
+                                        src="images/cart.jpg" alt="carrito" id="carrito">Mi Carrito</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container text-center white-container pb-4">
+            <div class="row">
+                <div class="col">
+                    <h1>
+                        Cambalaches
+                    </h1>
+                    <div class="row">
+                        <div class="col">
+                            <p id="grey-text">Encuentra aquí los productos que te gusten para iniciar
+                                tu<br />
+                                Cambalache</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="container d-flex flex-direction-column flex-wrap white-container align-items-center mt-1 py-4 justify-content-center px-5">
 
 
-        <button class="simplebutton"
-            onclick="location.href='http://cambalache.net:8080/index.html'">Inicio</button><span
-            class="simplebutton">|</span>
-        <button class="simplebutton"
-            onclick="location.href='http://cambalache.net:8080/cambalaches.html'">Cambalaches</button><span
-            class="simplebutton">|</span>
-        <button class="simplebutton" onclick="location.href='http://cambalache.net:8080/login.html'">Ingresar</button>
-        <button id="mainbutton" onclick="location.href='http://cambalache.net:8080/dashboard.html'"><img
-                src="/images/cart.jpg" alt="carrito" id="carrito">Mi
-            Carrito</button>
+            <div class="col-4 my-3">
+                <div class="row">
+
+                    <div class="col justify-content-end d-flex">
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>OLLA ARROCERA</h4>
+                        </a>
+                        <p>user2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>NINTENDO SWITCH</h4>
+                        </a>
+                        <p>bladimir.arroyo</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>MONITOR AOC 14"</h4>
+                        </a>
+                        <p>bladimir.arroyo</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4 my-3" >
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>OLLA ARROCERA</h4>
+                        </a>
+                        <p>user2</p>
 
 
 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>NINTENDO SWITCH</h4>
+                        </a>
+                        <p>bladimir.arroyo</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>MONITOR AOC 14"</h4>
+                        </a>
+                        <p>bladimir.arroyo</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>OLLA ARROCERA</h4>
+                        </a>
+                        <p>user2</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>NINTENDO SWITCH</h4>
+                        </a>
+                        <p>bladimir.arroyo</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-3">
+                <div class="row">
+                    <div class="col justify-content-end d-flex">
+
+                        <img class="normalimage" src="images/default.png" alt="mountain">
+                    </div>
+                    <div class="col">
+                        <a href="http://cambalache.net:8080/detalle.html">
+                            <h4>MONITOR AOC 14"</h4>
+                        </a>
+                        <p>bladimir.arroyo</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <footer>
+            <div class="container white-container pb-2 mt-1">
+                <div class="container text-center">
+                    <button class="simplebutton"
+                        onclick="location.href='http://cambalache.net:8080/index.html'">Inicio</button><span
+                        class="simplebutton">|</span>
+                    <button class="simplebutton"
+                        onclick="location.href='http://cambalache.net:8080/cambalaches.html'">Cambalaches</button><span
+                        class="simplebutton">|</span>
+                    <button class="simplebutton"
+                        onclick="location.href='http://cambalache.net:8080/login.html'">Ingresar</button>
+
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center my-2">
+                    <img src="images/c.png" alt="img">
+                    <span>Cambalache.net</span>
+                </div>
+            </div>
+        </footer>
 
 
     </div>
-    <div class="searchbarsection white-container">
-        <h1>
-            Cambalaches
-        </h1>
-        <p id="grey-text">Encuentra aquí los productos que te gusten para iniciar
-            tu<br />
-            Cambalache</p>
-        <br /><br />
-
-
-    </div>
-
-    <div class="mid-container-cambalaches">
-
-        <div class="container-items-products">
-
-            <a href="http://cambalache.net:8080/detalle.html">
-                <img class="normalimage" src="/images/default.png" alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>OLLA ARROCERA</h4>
-            </a>
-            <p>user2</p>
-
-        </div>
-        <div class="container-items-products">
-
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>NINTENDO SWITCH</h4>
-            </a>
-            <p>bladimir.arroyo</p>
-
-        </div>
-        <div class="container-items-products">
-
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>MONITOR AOC 14"</h4>
-            </a>
-            <p>bladimir.arroyo</p>
-
-
-        </div>
-        <div class="container-items-products">
-            <a href="http://cambalache.net:8080/detalle.html">
-                <img class="normalimage" src="/images/default.png" alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>OLLA ARROCERA</h4>
-            </a>
-            <p>user2</p>
-
-        </div>
-
-
-        <div class="container-items-products">
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>NINTENDO SWITCH</h4>
-            </a>
-            <p>bladimir.arroyo</p>
-
-        </div>
-        <div class="container-items-products">
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>MONITOR AOC 14"</h4>
-            </a>
-            <p>bladimir.arroyo</p>
-
-
-        </div>
-        <div class="container-items-products">
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>OLLA ARROCERA</h4>
-            </a>
-            <p>user2</p>
-
-        </div>
-        <div class="container-items-products">
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>NINTENDO SWITCH</h4>
-            </a>
-            <p>bladimir.arroyo</p>
-
-        </div>
-        <div class="container-items-products">
-
-            <a href="http://cambalache.net:8080/detalle.html"><img class="normalimage" src="/images/default.png"
-                    alt="mountain"></a>
-            <a href="http://cambalache.net:8080/detalle.html">
-                <h4>MONITOR AOC 14"</h4>
-            </a>
-            <p>bladimir.arroyo</p>
-
-        </div>
-
-
-
-
-    </div>
-
-    <div class="top-container-cambalache-smaller">
-
-
-        <div class="conteiner-text-center">
-            <button class="simplebutton"
-                onclick="location.href='http://cambalache.net:8080/index.html'">Inicio</button><span
-                class="simplebutton">|</span>
-            <button class="simplebutton"
-                onclick="location.href='http://cambalache.net:8080/cambalaches.html'">Cambalaches</button><span
-                class="simplebutton">|</span>
-            <button class="simplebutton"
-                onclick="location.href='http://cambalache.net:8080/login.html'">Ingresar</button>
-
-        </div>
-        <div class="container-aligned-inline white-container">
-            <img src="/images/c.png" alt="img">
-            <footer>Cambalache.net</footer>
-        </div>
-
-    </div>
-
-
 </body>
 
 </html>
