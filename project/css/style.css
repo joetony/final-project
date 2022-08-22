@@ -40,6 +40,9 @@ h2 {
 h5{
     font-size: 0.8rem;
 }
+h3{
+    font-size: calc(1.3rem + .1vw);
+}
 
 
 button{
@@ -87,11 +90,12 @@ select {
 input{
     margin:1%;
 }
+
 .img-responsive {
-    float: left;
-    width:  100px;
-    height: 100px;
-    background-size: cover;
+    
+    width: 100%;
+    height: 110px;
+    
 }
 .required:after {
     content:" *";
@@ -331,7 +335,9 @@ h4 {
 
 
 
-
+.dark-grey-content{
+    background-color: var(--main-grey)!important;
+}
 .simplebutton {
     background-color: Transparent;
     background-repeat: no-repeat;
@@ -439,11 +445,11 @@ h4 {
     margin-top: 3px;
 }
 
-.normalimage {
-    width: 110px;
-    padding: 30px 10px;
+.border-img {
+   
+    
     border: 2px solid var(--grey-for-hr);
-    margin-right: 10px;
+    
 }
 
 .greenbutton {
