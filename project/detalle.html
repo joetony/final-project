@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cambalache.net</title>
+    <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--css-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--js-->
+    <script src="js/class.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -51,25 +57,29 @@
                     </ul>
                 </div>
             </nav>
+            <span>Bienvenido <strong id="userNameLoggedIn">...</strong></span>
         </div>
-        
+
         <div class="container my-1 white-container">
-            <div class="row">
+            <div class="row" id="rowProductInformation">
 
 
-                <div class="col-6 d-flex align-items-center justify-content-center grey-container">
-                    <img id="" src="images/default.png" alt="mountain" class="img-fluid">
+                <div class="col-6 d-flex align-items-center justify-content-center grey-container" id="image">
+                    <!--here goes the product's image -->
+
 
                 </div>
                 <div class="col-6 p-5 align-items-start d-flex flex-column">
                     <div class="row">
-                        <div class="col">
-                            <h1>PS 4 Fornite Edition</h1>
+                        <div class="col" id="name">
+                            <!--here goes the product's name -->
+
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <h3>ofrecido por: <strong><a href="">bladimir.arroyo</a></strong> </h3>
+                            <!--here goes the provider's name -->
+                            <h3>Ofrecido por: <strong><a href="" id="userEmail">bladimir.arroyo</a></strong> </h3>
                         </div>
                     </div>
 
@@ -80,8 +90,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <p>Incluye la cuenta de Fortnite, asi como 2 controles y 3 juegos.</p>
+                        <div class="col" id="description">
+                            <!--here goes the product's description -->
+
                         </div>
                     </div>
                     <div class="row">
@@ -90,8 +101,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <p>Una nintendo switch, un drone, cualquier otro electrónico.</p>
+                        <div class="col" id="swap">
+                            <!--here goes the product's swap -->
+
                         </div>
                     </div>
                     <hr class="w-100" />
@@ -147,6 +159,10 @@
 
 
     </div>
+    <script>
+        loadUserNameLoggedIn();
+        loadProductInformation();
+    </script>
 </body>
 
 </html>

@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cambalache.net</title>
+    <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--css-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--js-->
+    <script src="js/class.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -78,21 +84,21 @@
 
                 <div class="col px-5 mx-5">
 
-                    <form class="form-inline">
+                    <form class="form-inline" id="usersForm">
                         <div class="form-group d-flex flex-wrap  justify-content-center">
-                            <div class="input-group ">
-                                <input type="text" placeholder="  First Name" class="form-control">
-                                <input type="text" placeholder="  Last Name" class="form-control">
+                            <div class="input-group">
+                                <input type="text" placeholder="  Nombre" class="form-control" id="name">
+                                <input type="text" placeholder="  Apellido" class="form-control" id="lastName">
                             </div>
 
 
-                            <input type="text" placeholder="  Address" class="form-control">
-                            <input type="text" placeholder="  Address 2" class="form-control">
+                            <input type="text" placeholder="  Dirección" class="form-control" id="address">
+                            <input type="text" placeholder="  Dirección 2" class="form-control" id="addressTwo">
                             <div class="input-group">
 
 
-                                <select class="form-control " >
-                                    <option value="" disabled selected hidden> Country</option>
+                                <select class="form-control m-2" id="country">
+                                    <option value="" disabled selected hidden> País</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="AX">Åland Islands</option>
                                     <option value="AL">Albania</option>
@@ -343,11 +349,11 @@
                                     <option value="ZM">Zambia</option>
                                     <option value="ZW">Zimbabwe</option>
                                 </select>
-                                <input type="text" placeholder="  City" class="form-control">
+                                <input type="text" placeholder="  Cuidad" class="form-control" id="city">
                             </div>
                             <div class="input-group">
-                                <input type="email" placeholder="Correo Electrónico" class="form-control">
-                                <input type="password" placeholder="  Contraseña" class="form-control">
+                                <input type="email" placeholder="Correo Electrónico" class="form-control" id="email">
+                                <input type="password" placeholder="  Contraseña" class="form-control" id="password">
                             </div>
                         </div>
                     </form>
@@ -368,7 +374,7 @@
 
 
                         <button id="greybutton" class="btn"
-                            onclick="location.href='http://cambalache.net:8080/dashboard.html'">Registrarse</button>
+                            onclick="addUser()">Registrarse</button><!--location.href='http://cambalache.net:8080/dashboard.html'-->
                         <button id="lightergreybutton" class="btn"
                             onclick="location.href='http://cambalache.net:8080/login.html'">Cancelar</button>
                     </div>
