@@ -21,12 +21,11 @@ body {
     color: var(--main-grey);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--main-bg-white);
-    margin-left: 20%;
-    margin-right: 20%;
+   
 }
 
 h1 {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 0;
     padding-top: 20px;
@@ -35,19 +34,24 @@ h1 {
 }
 
 h2 {
-    font-size: 14px;
+    font-size: 1.0rem;
     font-weight: bold;
+}
+h5{
+    font-size: 0.8rem;
 }
 
 
-button {
-    font-size: 11px;
+button{
+    font-size: 0.8rem;
     cursor: pointer;
 }
 
 
 p {
-    padding: 10px;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+
 }
 
 link {
@@ -80,9 +84,19 @@ figcaption {
 select {
     color: var(--grey-button);
 }
-
-
-
+input{
+    margin:1%;
+}
+.img-responsive {
+    float: left;
+    width:  100px;
+    height: 100px;
+    background-size: cover;
+}
+.required:after {
+    content:" *";
+    color: red;
+  }
 .white-container {
     background-color: var(--main-white);
 }
@@ -91,10 +105,16 @@ select {
     background-color: var(--main-bg-grey);
 
 }
-
+.main-container{
+    width: 70%;
+    padding: 0;
+    text-align: center;
+    /*border: 1px solid #DDD;*/
+    margin: 0 auto;
+}
 .top-container-cambalache {
     background-color: var(--main-bg-grey);
-    height: 300px;
+   
 
 }
 
@@ -143,10 +163,10 @@ h4 {
 
 }
 
-
+/*
 .white-container #greybutton {
     margin-left: 5%;
-}
+}*/
 
 .mid-container-body {
     text-align: center;
@@ -184,6 +204,10 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-between;
 
+}
+.px-6{
+    padding-left: 12rem;
+    padding-right: 12rem;
 }
 
 .mid-container-register-inside h5 {
@@ -245,7 +269,7 @@ h4 {
 
 .searchbarsection {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 5%;
 
 }
 
@@ -266,7 +290,7 @@ h4 {
     background-color: var(--grey-for-hr);
 }
 
-.searchbarsection input {
+.searchbar-input {
     width: 400px;
     height: 35px;
 }
@@ -276,6 +300,13 @@ h4 {
     width: 16%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+.hrmedio{
+    width: 25%;
+    height: 2px !important;
+    
+    margin: 2% auto 2% auto;
+  
 }
 
 .mid-container-cambalache img {
@@ -295,7 +326,7 @@ h4 {
 
 .mid-container-cambalache {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 5%;
 }
 
 
@@ -305,9 +336,10 @@ h4 {
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
-    height: 28px;
-    margin: 18px;
+    height: 1rem;
+    margin: 1rem;
     color: var(--main-grey);
+    font-size: 0.9rem
 }
 
 
@@ -478,6 +510,10 @@ h4 {
     margin: 1.5% 1%;
     height: 25px;
 }
+
+.form-control-sm{
+    min-width: calc(30.5em + (0.5rem + 2px));
+}
 #logoimage {
     height: 65px;
     margin-right: 40%;
@@ -495,11 +531,13 @@ h4 {
 #mainbutton {
     background-color: var(--main-grey);
     color: var(--main-white);
-    height: 28px;
-    margin: 9px;
-    width: 100px;
-    display: flex;
-    align-items: center;
+    
+    margin: 1rem;
+   
+    
+}
+#mainbutton:hover{
+    background-color: var(--grey-button);
 }
 
 #logoimagesmaller {
@@ -517,20 +555,16 @@ h4 {
 }
 
 
-
-
-
-
-
-#searchbutton {
-    height: 36px;
-    width: 125px;
-    margin: none;
+#search-button {
     border: none;
-
-
+    margin-left: 0.5%;
     background-color: var(--main-grey);
     color: var(--main-white);
+    min-width: calc(5.5em + (0.5rem + 2px));
+}
+#search-button:hover {
+    background-color: var(--grey-button);
+
 }
 
 #lupa:focus {
@@ -571,9 +605,8 @@ h4 {
 #greybutton {
     background-color: var(--main-grey);
     color: var(--main-white);
-    height: 38px;
-
-    width: 160px;
+    height: 2.5rem;
+    width: 9rem;
     border: none;
 
     margin: 0.5%;
@@ -583,9 +616,8 @@ h4 {
 #lightergreybutton {
     background-color: var(--ligther-grey-button);
     color: var(--grey-button);
-    height: 38px;
-
-    width: 160px;
+    height: 2.5rem;
+    width: 9rem;
     border: none;
 
     margin: 0.5%;
