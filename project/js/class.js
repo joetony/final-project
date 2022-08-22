@@ -64,9 +64,7 @@ function checkEmailFormat() {
 function emailValidation() {
   // read users from the database
   const users = JSON.parse(localStorage.getItem('users'));
-  if (!users) {
-    users = [];
-  }
+ 
   const email = $('#email').val();
 
 
@@ -122,7 +120,7 @@ function addUser() {
 
     console.log(JSON.parse(localStorage.getItem('users')));
     alert("Se ha guardado el usuario correctamente.");
-    window.location.href = 'file:///F:/xampp/htdocs/final%20project/login.html';
+    window.location.href = 'http://cambalachefinal.net:8080/login.html';
   }
 }
 
@@ -157,7 +155,7 @@ function loginValidation() {
         if ((users[i].email == email) && (users[i].password == password)) {
           sessionStorage.setItem('user', JSON.stringify(users[i]));
           alert("Se ha ingresado sesión correctamente.");
-          window.location.href = 'file:///F:/xampp/htdocs/final%20project/dashboard.html';
+          window.location.href = 'http://cambalachefinal.net:8080/dashboard.html';
           check = true;
           break;
 
@@ -189,7 +187,7 @@ function loadUserNameLoggedIn() {
 function checkUserLoggedIn() {
   let user = JSON.parse(sessionStorage.getItem('user'));
   if (!user) {
-    window.location.href = 'file:///F:/xampp/htdocs/final%20project/login.html';
+    window.location.href = 'http://cambalachefinal.net:8080/login.html';
   } else {
     return user;
   }
@@ -200,7 +198,7 @@ function checkUserLoggedIn() {
 function logOut() {
   sessionStorage.clear();
   alert("Se ha cerrado la sesión correctamente.");
-  window.location.href = 'file:///F:/xampp/htdocs/final%20project/login.html';
+  window.location.href = 'http://cambalachefinal.net:8080/login.html';
 }
 
 
@@ -290,7 +288,7 @@ function addProduct() {
     localStorage.setItem('products', JSON.stringify(productsDb));
 
     alert("Se ha guardado el producto correctamente.");
-    window.location.href = 'file:///F:/xampp/htdocs/final%20project/dashboard.html';
+    window.location.href = 'http://cambalachefinal.net:8080/dashboard.html';
   }
 }
 
@@ -304,25 +302,25 @@ function loadDashboardProducts() {
     let options = "";
     for (var i = 0; i < products.length; i++) {
       if (products[i].user == currentUser.email) {
-        options += `<div class="col-4 my-3">
+        options += `<div class="col-lg-4 my-3 col-xs-6 col-sm-6 col-md-6">
                        
         <div class="row">
             <div class="col d-flex justify-content-end">
         
-                <img class="normalimage" src="${products[i].image}" alt="img">
+                <img class="border-img img-responsive rounded" src="${products[i].image}" alt="img">
             </div>
         
         
             <div class="col d-flex align-items-start flex-column">
                 <div class="row">
                     <div class="col">
-                        <a href="file:///F:/xampp/htdocs/final%20project/detalle.html" onclick="saveCurrentProduct(${products[i].id});">${products[i].name}</a>
+                        <a href="http://cambalachefinal.net:8080/detalle.html" onclick="saveCurrentProduct(${products[i].id});">${products[i].name}</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <button class="greenbutton"
-                            onclick="location.href='file:///F:/xampp/htdocs/final%20project/productos.html';saveCurrentProduct(${products[i].id})">Editar</button>
+                            onclick="location.href='http://cambalachefinal.net:8080/productos.html';saveCurrentProduct(${products[i].id})">Editar</button>
                     </div>
                 </div>
                 <div class="row">
@@ -428,17 +426,17 @@ function loadCambalacheInformation() {
     }
 
 
-    productsContainer += `<div class="col-4 my-3">
+    productsContainer += `<div class="col-4 my-3 col-xs-6 col-sm-6">
       <div class="row ">
 
           <div class="col justify-content-end d-flex">
-            <a  href="file:///F:/xampp/htdocs/final%20project/detalle.html" onclick="saveCurrentProduct(${products[i].id});">
-              <img class="normalimage rounded" src="${products[i].image}" alt="mountain">
+            <a  href="http://cambalachefinal.net:8080/detalle.html" onclick="saveCurrentProduct(${products[i].id});">
+              <img class="border-img img-responsive rounded img-fluid" src="${products[i].image}" alt="mountain">
             </a>
               
           </div>
           <div class="col flex-column align-items-start d-flex">
-          <a  href="file:///F:/xampp/htdocs/final%20project/detalle.html" onclick="saveCurrentProduct(${products[i].id});">
+          <a  href="http://cambalachefinal.net:8080/detalle.html" onclick="saveCurrentProduct(${products[i].id});">
                   <h4 class="px-0 mx-0">${products[i].name}</h4>
               </a>
               <p class="px-0 mx-0">${userName}</p>
@@ -460,12 +458,14 @@ function loadRecentCambalaches() {
     if (counter != 0) {
       counter--;
       productsContainer += `<div class="col-12 col-sm-5 col-md-6 col-lg-5 mb-4 mx-lg-auto mx-md-auto mx-sm-auto">
+      <a  href="http://cambalachefinal.net:8080/detalle.html" onclick="saveCurrentProduct(${products[i].id});">
     <img src="${products[i].image}" class=" w-50" alt="img">
-    <p>${products[i].name}</p></div>`;
+    <p>${products[i].name}</p></a></div>`;
     } else {
       productsContainerAdditional += `<div class="col-12 col-sm-5 col-md-6 col-lg-5 mb-4 mx-lg-auto mx-md-auto mx-sm-auto">
+      <a  href="http://cambalachefinal.net:8080/detalle.html" onclick="saveCurrentProduct(${products[i].id});">
     <img src="${products[i].image}" class=" w-50" alt="img">
-    <p>${products[i].name}</p></div>`;
+    <p>${products[i].name}</p></a></div>`;
 
 
     }
