@@ -98,6 +98,8 @@
                             class="form-control mx-0 form-control-sm" id="image">
                         <textarea placeholder=" Busco" class="form-control mx-0 pb-5 form-control-sm " maxlength="300"
                             id="swap"></textarea>
+                            <select  id="category" class="form-control mx-0 my-2 form-control-sm">
+                            </select>
                         </div>
                 </form>
             </div>
@@ -142,7 +144,10 @@
     <script>
         checkUserLoggedIn();
         loadUserNameLoggedIn();
+        loadCategoriesSelect();
         loadDataOfEditProduct();
+        loadRecentCategories();
+       
 
     </script>
 </body>

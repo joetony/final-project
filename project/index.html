@@ -102,29 +102,42 @@
 
             
                     <div class="row mb-4 justify-content-center">
-                        <div class="col-lg-3 col-xs-12 col-sm-12 col-md-12">
-                            <div class="card align-items-center">
-                                <img src="/images/electronicos.jpg" class="img-responsive w-100 w-sm-50 w-lg-50" alt="electronicos">
-                                <div class="card-body">
-                                    <a href="#" target="_self" class="dark-grey-content btn btn-primary card-title ">Electronicos</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-xs-12 col-sm-12 col-md-12">
-                            <div class="card align-items-center">
-                                <img src="/images/hogar.jpg" class="img-responsive w-100 w-sm-50 w-lg-50" alt="hogar">
-                                <div class="card-body">
-                                    <a href="#" target="_self" class="dark-grey-content btn btn-primary card-title">Hogar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-xs-12 col-sm-12 col-md-12">
-                            <div class="card align-items-center">
-                                <img src="/images/negocios.jpg" class= "img-responsive w-100 w-sm-50 w-lg-50" alt="negocios">
-                                <div class="card-body">
+                        <div class="container w-100 p-3 justify-content-space-evenly mb-4">
 
-                                    <a href="#" target="_self" class="dark-grey-content btn btn-primary card-title">Negocios</a>
+                            <div id="carouselCategories" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                                data-interval="false">
+    
+    
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="15000">
+                                        <div class="row d-flex align-items-center" id="categoriesContainer">
+                                            <!--here goes the last 2 categories added to the localSession-->
+                                            
+    
+                                        </div>
+                                    </div>
+    
+    
+                                    <div class="carousel-item" data-bs-interval="15000">
+                                        <div class="row" id="categoriesContainerAdditional">
+                                            <!--here goes the rest of categories added to the localSession-->
+                                        </div>
+                                    </div>
+    
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselCategories" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselCategories" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
+    
+    
+    
                             </div>
                         </div>
 
@@ -155,7 +168,7 @@
                                 </div>
 
 
-                                <div class="carousel-item" data-bs-interval="2000">
+                                <div class="carousel-item" data-bs-interval="10000">
                                     <div class="row" id="productsContainerAdditional">
                                         <!--here goes the rest of products added to the localSession-->
                                     </div>
@@ -205,6 +218,7 @@
         </div>
     </div>
     <script>
+        loadRecentCategories();
         loadRecentCambalaches();
         deleteCurrentProduct();
     </script>
